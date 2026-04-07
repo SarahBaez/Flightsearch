@@ -8,6 +8,6 @@ import androidx.room.PrimaryKey
 data class Airport(
     @PrimaryKey val id: Int,
     @ColumnInfo(name = "iata_code") val iataCode: String,
-    val name: String,
-    val passengers: Int
+    @ColumnInfo(name = "name") val name: String,
+    @ColumnInfo(name = "passengers") val passengers: Int
 )
